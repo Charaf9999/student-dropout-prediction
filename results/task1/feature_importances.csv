@@ -1,0 +1,226 @@
+feature,importance,cumulative_importance,selected
+Curricular units 2nd sem (approved),0.5848244047525598,0.5848244047525598,True
+Tuition fees up to date,0.08024342525882427,0.6650678300113841,True
+Curricular units 1st sem (enrolled),0.04268603672297472,0.7077538667343588,True
+Curricular units 1st sem (approved),0.036020211044374625,0.7437740777787334,True
+Age at enrollment,0.034272508161310354,0.7780465859400437,True
+Curricular units 2nd sem (evaluations),0.03182652064416776,0.8098731065842115,True
+Curricular units 1st sem (evaluations),0.025201003639669865,0.8350741102238813,True
+Curricular units 2nd sem (grade),0.02233889234446712,0.8574130025683484,True
+Admission grade,0.01727889070552268,0.8746918932738711,True
+Curricular units 2nd sem (enrolled),0.01627760488274202,0.8909694981566131,True
+Curricular units 1st sem (grade),0.01563355152157747,0.9066030496781905,True
+Previous qualification (grade),0.014011763767841065,0.9206148134460316,False
+Unemployment rate,0.010187350677814308,0.9308021641238459,False
+Course__9853,0.008062776704010812,0.9388649408278567,False
+Inflation rate,0.007918438934779823,0.9467833797626365,False
+GDP,0.007548106239321339,0.9543314860019578,False
+Father's occupation__4,0.00592808517403158,0.9602595711759894,False
+Mother's occupation__0,0.005335382351116925,0.9655949535271063,False
+Gender,0.00473684759182306,0.9703318011189294,False
+Father's occupation__8,0.0046563597511791715,0.9749881608701085,False
+Father's occupation__5,0.004006491997999414,0.9789946528681079,False
+Course__9238,0.0034744628730794596,0.9824691157411874,False
+Scholarship holder,0.0028487910639414956,0.985317906805129,False
+Previous qualification__1,0.0026526812690204973,0.9879705880741495,False
+Mother's qualification__3,0.0020612768459763297,0.9900318649201258,False
+Application order,0.0019106689364721385,0.991942533856598,False
+Course__9670,0.0019106689364721376,0.9938532027930702,False
+Mother's occupation__9,0.001756501204825577,0.9956097039978958,False
+Application mode__1,0.001633050373053109,0.9972427543709489,False
+Mother's occupation__1,0.001120331969295825,0.9983630863402447,False
+Course__9085,0.0009070852526685862,0.9992701715929133,False
+Course__9147,0.000729828407086652,1.0,False
+Daytime/evening attendance,0.0,1.0,False
+Displaced,0.0,1.0,False
+Educational special needs,0.0,1.0,False
+Debtor,0.0,1.0,False
+International,0.0,1.0,False
+Curricular units 1st sem (credited),0.0,1.0,False
+Curricular units 1st sem (without evaluations),0.0,1.0,False
+Curricular units 2nd sem (credited),0.0,1.0,False
+Curricular units 2nd sem (without evaluations),0.0,1.0,False
+Marital status__1,0.0,1.0,False
+Marital status__2,0.0,1.0,False
+Marital status__3,0.0,1.0,False
+Marital status__4,0.0,1.0,False
+Marital status__5,0.0,1.0,False
+Marital status__6,0.0,1.0,False
+Application mode__2,0.0,1.0,False
+Application mode__5,0.0,1.0,False
+Application mode__7,0.0,1.0,False
+Application mode__10,0.0,1.0,False
+Application mode__15,0.0,1.0,False
+Application mode__16,0.0,1.0,False
+Application mode__17,0.0,1.0,False
+Application mode__18,0.0,1.0,False
+Application mode__26,0.0,1.0,False
+Application mode__39,0.0,1.0,False
+Application mode__42,0.0,1.0,False
+Application mode__43,0.0,1.0,False
+Application mode__44,0.0,1.0,False
+Application mode__51,0.0,1.0,False
+Application mode__53,0.0,1.0,False
+Application mode__57,0.0,1.0,False
+Course__33,0.0,1.0,False
+Course__171,0.0,1.0,False
+Course__8014,0.0,1.0,False
+Course__9003,0.0,1.0,False
+Course__9070,0.0,1.0,False
+Course__9119,0.0,1.0,False
+Course__9130,0.0,1.0,False
+Course__9254,0.0,1.0,False
+Course__9500,0.0,1.0,False
+Course__9556,0.0,1.0,False
+Course__9773,0.0,1.0,False
+Course__9991,0.0,1.0,False
+Previous qualification__2,0.0,1.0,False
+Previous qualification__3,0.0,1.0,False
+Previous qualification__4,0.0,1.0,False
+Previous qualification__5,0.0,1.0,False
+Previous qualification__6,0.0,1.0,False
+Previous qualification__9,0.0,1.0,False
+Previous qualification__10,0.0,1.0,False
+Previous qualification__12,0.0,1.0,False
+Previous qualification__14,0.0,1.0,False
+Previous qualification__15,0.0,1.0,False
+Previous qualification__19,0.0,1.0,False
+Previous qualification__38,0.0,1.0,False
+Previous qualification__39,0.0,1.0,False
+Previous qualification__40,0.0,1.0,False
+Previous qualification__42,0.0,1.0,False
+Previous qualification__43,0.0,1.0,False
+Nacionality__1,0.0,1.0,False
+Nacionality__6,0.0,1.0,False
+Nacionality__11,0.0,1.0,False
+Nacionality__13,0.0,1.0,False
+Nacionality__17,0.0,1.0,False
+Nacionality__21,0.0,1.0,False
+Nacionality__22,0.0,1.0,False
+Nacionality__24,0.0,1.0,False
+Nacionality__25,0.0,1.0,False
+Nacionality__26,0.0,1.0,False
+Nacionality__32,0.0,1.0,False
+Nacionality__41,0.0,1.0,False
+Nacionality__100,0.0,1.0,False
+Nacionality__101,0.0,1.0,False
+Nacionality__103,0.0,1.0,False
+Nacionality__105,0.0,1.0,False
+Nacionality__108,0.0,1.0,False
+Nacionality__109,0.0,1.0,False
+Mother's qualification__1,0.0,1.0,False
+Mother's qualification__2,0.0,1.0,False
+Mother's qualification__4,0.0,1.0,False
+Mother's qualification__5,0.0,1.0,False
+Mother's qualification__6,0.0,1.0,False
+Mother's qualification__9,0.0,1.0,False
+Mother's qualification__10,0.0,1.0,False
+Mother's qualification__11,0.0,1.0,False
+Mother's qualification__12,0.0,1.0,False
+Mother's qualification__14,0.0,1.0,False
+Mother's qualification__19,0.0,1.0,False
+Mother's qualification__29,0.0,1.0,False
+Mother's qualification__30,0.0,1.0,False
+Mother's qualification__34,0.0,1.0,False
+Mother's qualification__35,0.0,1.0,False
+Mother's qualification__36,0.0,1.0,False
+Mother's qualification__37,0.0,1.0,False
+Mother's qualification__38,0.0,1.0,False
+Mother's qualification__39,0.0,1.0,False
+Mother's qualification__40,0.0,1.0,False
+Mother's qualification__41,0.0,1.0,False
+Mother's qualification__42,0.0,1.0,False
+Mother's qualification__43,0.0,1.0,False
+Father's qualification__1,0.0,1.0,False
+Father's qualification__2,0.0,1.0,False
+Father's qualification__3,0.0,1.0,False
+Father's qualification__4,0.0,1.0,False
+Father's qualification__5,0.0,1.0,False
+Father's qualification__6,0.0,1.0,False
+Father's qualification__9,0.0,1.0,False
+Father's qualification__10,0.0,1.0,False
+Father's qualification__11,0.0,1.0,False
+Father's qualification__12,0.0,1.0,False
+Father's qualification__14,0.0,1.0,False
+Father's qualification__19,0.0,1.0,False
+Father's qualification__22,0.0,1.0,False
+Father's qualification__25,0.0,1.0,False
+Father's qualification__26,0.0,1.0,False
+Father's qualification__27,0.0,1.0,False
+Father's qualification__29,0.0,1.0,False
+Father's qualification__30,0.0,1.0,False
+Father's qualification__31,0.0,1.0,False
+Father's qualification__33,0.0,1.0,False
+Father's qualification__34,0.0,1.0,False
+Father's qualification__35,0.0,1.0,False
+Father's qualification__36,0.0,1.0,False
+Father's qualification__37,0.0,1.0,False
+Father's qualification__38,0.0,1.0,False
+Father's qualification__39,0.0,1.0,False
+Father's qualification__40,0.0,1.0,False
+Father's qualification__41,0.0,1.0,False
+Father's qualification__43,0.0,1.0,False
+Father's qualification__44,0.0,1.0,False
+Mother's occupation__2,0.0,1.0,False
+Mother's occupation__3,0.0,1.0,False
+Mother's occupation__4,0.0,1.0,False
+Mother's occupation__5,0.0,1.0,False
+Mother's occupation__6,0.0,1.0,False
+Mother's occupation__7,0.0,1.0,False
+Mother's occupation__8,0.0,1.0,False
+Mother's occupation__10,0.0,1.0,False
+Mother's occupation__90,0.0,1.0,False
+Mother's occupation__99,0.0,1.0,False
+Mother's occupation__122,0.0,1.0,False
+Mother's occupation__123,0.0,1.0,False
+Mother's occupation__131,0.0,1.0,False
+Mother's occupation__132,0.0,1.0,False
+Mother's occupation__134,0.0,1.0,False
+Mother's occupation__141,0.0,1.0,False
+Mother's occupation__143,0.0,1.0,False
+Mother's occupation__144,0.0,1.0,False
+Mother's occupation__151,0.0,1.0,False
+Mother's occupation__152,0.0,1.0,False
+Mother's occupation__175,0.0,1.0,False
+Mother's occupation__191,0.0,1.0,False
+Mother's occupation__192,0.0,1.0,False
+Mother's occupation__193,0.0,1.0,False
+Mother's occupation__194,0.0,1.0,False
+Father's occupation__0,0.0,1.0,False
+Father's occupation__1,0.0,1.0,False
+Father's occupation__2,0.0,1.0,False
+Father's occupation__3,0.0,1.0,False
+Father's occupation__6,0.0,1.0,False
+Father's occupation__7,0.0,1.0,False
+Father's occupation__9,0.0,1.0,False
+Father's occupation__10,0.0,1.0,False
+Father's occupation__90,0.0,1.0,False
+Father's occupation__99,0.0,1.0,False
+Father's occupation__101,0.0,1.0,False
+Father's occupation__102,0.0,1.0,False
+Father's occupation__103,0.0,1.0,False
+Father's occupation__112,0.0,1.0,False
+Father's occupation__114,0.0,1.0,False
+Father's occupation__121,0.0,1.0,False
+Father's occupation__122,0.0,1.0,False
+Father's occupation__123,0.0,1.0,False
+Father's occupation__131,0.0,1.0,False
+Father's occupation__132,0.0,1.0,False
+Father's occupation__134,0.0,1.0,False
+Father's occupation__135,0.0,1.0,False
+Father's occupation__144,0.0,1.0,False
+Father's occupation__151,0.0,1.0,False
+Father's occupation__152,0.0,1.0,False
+Father's occupation__154,0.0,1.0,False
+Father's occupation__161,0.0,1.0,False
+Father's occupation__163,0.0,1.0,False
+Father's occupation__171,0.0,1.0,False
+Father's occupation__172,0.0,1.0,False
+Father's occupation__174,0.0,1.0,False
+Father's occupation__175,0.0,1.0,False
+Father's occupation__181,0.0,1.0,False
+Father's occupation__182,0.0,1.0,False
+Father's occupation__183,0.0,1.0,False
+Father's occupation__192,0.0,1.0,False
+Father's occupation__193,0.0,1.0,False
+Father's occupation__194,0.0,1.0,False

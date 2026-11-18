@@ -1,0 +1,23 @@
+{
+  "contract_version": 1,
+  "features": [
+    "Curricular units 2nd sem (approved)",
+    "Tuition fees up to date",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (approved)",
+    "Age at enrollment",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 2nd sem (grade)",
+    "Admission grade",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 1st sem (grade)"
+  ],
+  "selection_method": "cumulative_normalized_weighted_gini_decrease",
+  "selection_parameters": {
+    "threshold": 0.9,
+    "max_depth": 8,
+    "min_samples_leaf": 5,
+    "min_gain": 1e-12
+  }
+}

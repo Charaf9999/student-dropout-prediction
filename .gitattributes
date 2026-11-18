@@ -1,0 +1,2 @@
+# Préserver les octets du fichier UCI pour son empreinte SHA-256.
+data/raw/data.csv -text

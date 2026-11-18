@@ -1,0 +1,48 @@
+{
+  "contract_version": 1,
+  "content_fingerprint": "6b4e610275a67f90169bd55706b361ffaa75e16ecc42fba5d57fae52a184eae0",
+  "source": "https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success",
+  "raw_sha256": "3ef126de5cefff26eb11fbb4237f1a1401cb64b488e2f1d598c23cedeb4c45ae",
+  "seed": 42,
+  "split_method": "per-class default_rng(42) permutation, floor 60%, floor 20%, remainder test; row_id sorted",
+  "split_counts": {
+    "train": 2653,
+    "val": 883,
+    "test": 888
+  },
+  "class_order": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "class_to_int": {
+    "Dropout": 0,
+    "Enrolled": 1,
+    "Graduate": 2
+  },
+  "class_counts_by_split": {
+    "train": {
+      "Dropout": 852,
+      "Enrolled": 476,
+      "Graduate": 1325
+    },
+    "val": {
+      "Dropout": 284,
+      "Enrolled": 158,
+      "Graduate": 441
+    },
+    "test": {
+      "Dropout": 285,
+      "Enrolled": 160,
+      "Graduate": 443
+    }
+  },
+  "selected_feature_count": 11,
+  "prediction_context": "includes first- and second-semester information; retrospective classification",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  }
+}

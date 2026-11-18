@@ -1,0 +1,226 @@
+feature,source_column,kind,category
+Application order,Application order,numeric,
+Daytime/evening attendance,Daytime/evening attendance,binary,
+Previous qualification (grade),Previous qualification (grade),numeric,
+Admission grade,Admission grade,numeric,
+Displaced,Displaced,binary,
+Educational special needs,Educational special needs,binary,
+Debtor,Debtor,binary,
+Tuition fees up to date,Tuition fees up to date,binary,
+Gender,Gender,binary,
+Scholarship holder,Scholarship holder,binary,
+Age at enrollment,Age at enrollment,numeric,
+International,International,binary,
+Curricular units 1st sem (credited),Curricular units 1st sem (credited),numeric,
+Curricular units 1st sem (enrolled),Curricular units 1st sem (enrolled),numeric,
+Curricular units 1st sem (evaluations),Curricular units 1st sem (evaluations),numeric,
+Curricular units 1st sem (approved),Curricular units 1st sem (approved),numeric,
+Curricular units 1st sem (grade),Curricular units 1st sem (grade),numeric,
+Curricular units 1st sem (without evaluations),Curricular units 1st sem (without evaluations),numeric,
+Curricular units 2nd sem (credited),Curricular units 2nd sem (credited),numeric,
+Curricular units 2nd sem (enrolled),Curricular units 2nd sem (enrolled),numeric,
+Curricular units 2nd sem (evaluations),Curricular units 2nd sem (evaluations),numeric,
+Curricular units 2nd sem (approved),Curricular units 2nd sem (approved),numeric,
+Curricular units 2nd sem (grade),Curricular units 2nd sem (grade),numeric,
+Curricular units 2nd sem (without evaluations),Curricular units 2nd sem (without evaluations),numeric,
+Unemployment rate,Unemployment rate,numeric,
+Inflation rate,Inflation rate,numeric,
+GDP,GDP,numeric,
+Marital status__1,Marital status,one_hot,1
+Marital status__2,Marital status,one_hot,2
+Marital status__3,Marital status,one_hot,3
+Marital status__4,Marital status,one_hot,4
+Marital status__5,Marital status,one_hot,5
+Marital status__6,Marital status,one_hot,6
+Application mode__1,Application mode,one_hot,1
+Application mode__2,Application mode,one_hot,2
+Application mode__5,Application mode,one_hot,5
+Application mode__7,Application mode,one_hot,7
+Application mode__10,Application mode,one_hot,10
+Application mode__15,Application mode,one_hot,15
+Application mode__16,Application mode,one_hot,16
+Application mode__17,Application mode,one_hot,17
+Application mode__18,Application mode,one_hot,18
+Application mode__26,Application mode,one_hot,26
+Application mode__39,Application mode,one_hot,39
+Application mode__42,Application mode,one_hot,42
+Application mode__43,Application mode,one_hot,43
+Application mode__44,Application mode,one_hot,44
+Application mode__51,Application mode,one_hot,51
+Application mode__53,Application mode,one_hot,53
+Application mode__57,Application mode,one_hot,57
+Course__33,Course,one_hot,33
+Course__171,Course,one_hot,171
+Course__8014,Course,one_hot,8014
+Course__9003,Course,one_hot,9003
+Course__9070,Course,one_hot,9070
+Course__9085,Course,one_hot,9085
+Course__9119,Course,one_hot,9119
+Course__9130,Course,one_hot,9130
+Course__9147,Course,one_hot,9147
+Course__9238,Course,one_hot,9238
+Course__9254,Course,one_hot,9254
+Course__9500,Course,one_hot,9500
+Course__9556,Course,one_hot,9556
+Course__9670,Course,one_hot,9670
+Course__9773,Course,one_hot,9773
+Course__9853,Course,one_hot,9853
+Course__9991,Course,one_hot,9991
+Previous qualification__1,Previous qualification,one_hot,1
+Previous qualification__2,Previous qualification,one_hot,2
+Previous qualification__3,Previous qualification,one_hot,3
+Previous qualification__4,Previous qualification,one_hot,4
+Previous qualification__5,Previous qualification,one_hot,5
+Previous qualification__6,Previous qualification,one_hot,6
+Previous qualification__9,Previous qualification,one_hot,9
+Previous qualification__10,Previous qualification,one_hot,10
+Previous qualification__12,Previous qualification,one_hot,12
+Previous qualification__14,Previous qualification,one_hot,14
+Previous qualification__15,Previous qualification,one_hot,15
+Previous qualification__19,Previous qualification,one_hot,19
+Previous qualification__38,Previous qualification,one_hot,38
+Previous qualification__39,Previous qualification,one_hot,39
+Previous qualification__40,Previous qualification,one_hot,40
+Previous qualification__42,Previous qualification,one_hot,42
+Previous qualification__43,Previous qualification,one_hot,43
+Nacionality__1,Nacionality,one_hot,1
+Nacionality__6,Nacionality,one_hot,6
+Nacionality__11,Nacionality,one_hot,11
+Nacionality__13,Nacionality,one_hot,13
+Nacionality__17,Nacionality,one_hot,17
+Nacionality__21,Nacionality,one_hot,21
+Nacionality__22,Nacionality,one_hot,22
+Nacionality__24,Nacionality,one_hot,24
+Nacionality__25,Nacionality,one_hot,25
+Nacionality__26,Nacionality,one_hot,26
+Nacionality__32,Nacionality,one_hot,32
+Nacionality__41,Nacionality,one_hot,41
+Nacionality__100,Nacionality,one_hot,100
+Nacionality__101,Nacionality,one_hot,101
+Nacionality__103,Nacionality,one_hot,103
+Nacionality__105,Nacionality,one_hot,105
+Nacionality__108,Nacionality,one_hot,108
+Nacionality__109,Nacionality,one_hot,109
+Mother's qualification__1,Mother's qualification,one_hot,1
+Mother's qualification__2,Mother's qualification,one_hot,2
+Mother's qualification__3,Mother's qualification,one_hot,3
+Mother's qualification__4,Mother's qualification,one_hot,4
+Mother's qualification__5,Mother's qualification,one_hot,5
+Mother's qualification__6,Mother's qualification,one_hot,6
+Mother's qualification__9,Mother's qualification,one_hot,9
+Mother's qualification__10,Mother's qualification,one_hot,10
+Mother's qualification__11,Mother's qualification,one_hot,11
+Mother's qualification__12,Mother's qualification,one_hot,12
+Mother's qualification__14,Mother's qualification,one_hot,14
+Mother's qualification__19,Mother's qualification,one_hot,19
+Mother's qualification__29,Mother's qualification,one_hot,29
+Mother's qualification__30,Mother's qualification,one_hot,30
+Mother's qualification__34,Mother's qualification,one_hot,34
+Mother's qualification__35,Mother's qualification,one_hot,35
+Mother's qualification__36,Mother's qualification,one_hot,36
+Mother's qualification__37,Mother's qualification,one_hot,37
+Mother's qualification__38,Mother's qualification,one_hot,38
+Mother's qualification__39,Mother's qualification,one_hot,39
+Mother's qualification__40,Mother's qualification,one_hot,40
+Mother's qualification__41,Mother's qualification,one_hot,41
+Mother's qualification__42,Mother's qualification,one_hot,42
+Mother's qualification__43,Mother's qualification,one_hot,43
+Father's qualification__1,Father's qualification,one_hot,1
+Father's qualification__2,Father's qualification,one_hot,2
+Father's qualification__3,Father's qualification,one_hot,3
+Father's qualification__4,Father's qualification,one_hot,4
+Father's qualification__5,Father's qualification,one_hot,5
+Father's qualification__6,Father's qualification,one_hot,6
+Father's qualification__9,Father's qualification,one_hot,9
+Father's qualification__10,Father's qualification,one_hot,10
+Father's qualification__11,Father's qualification,one_hot,11
+Father's qualification__12,Father's qualification,one_hot,12
+Father's qualification__14,Father's qualification,one_hot,14
+Father's qualification__19,Father's qualification,one_hot,19
+Father's qualification__22,Father's qualification,one_hot,22
+Father's qualification__25,Father's qualification,one_hot,25
+Father's qualification__26,Father's qualification,one_hot,26
+Father's qualification__27,Father's qualification,one_hot,27
+Father's qualification__29,Father's qualification,one_hot,29
+Father's qualification__30,Father's qualification,one_hot,30
+Father's qualification__31,Father's qualification,one_hot,31
+Father's qualification__33,Father's qualification,one_hot,33
+Father's qualification__34,Father's qualification,one_hot,34
+Father's qualification__35,Father's qualification,one_hot,35
+Father's qualification__36,Father's qualification,one_hot,36
+Father's qualification__37,Father's qualification,one_hot,37
+Father's qualification__38,Father's qualification,one_hot,38
+Father's qualification__39,Father's qualification,one_hot,39
+Father's qualification__40,Father's qualification,one_hot,40
+Father's qualification__41,Father's qualification,one_hot,41
+Father's qualification__43,Father's qualification,one_hot,43
+Father's qualification__44,Father's qualification,one_hot,44
+Mother's occupation__0,Mother's occupation,one_hot,0
+Mother's occupation__1,Mother's occupation,one_hot,1
+Mother's occupation__2,Mother's occupation,one_hot,2
+Mother's occupation__3,Mother's occupation,one_hot,3
+Mother's occupation__4,Mother's occupation,one_hot,4
+Mother's occupation__5,Mother's occupation,one_hot,5
+Mother's occupation__6,Mother's occupation,one_hot,6
+Mother's occupation__7,Mother's occupation,one_hot,7
+Mother's occupation__8,Mother's occupation,one_hot,8
+Mother's occupation__9,Mother's occupation,one_hot,9
+Mother's occupation__10,Mother's occupation,one_hot,10
+Mother's occupation__90,Mother's occupation,one_hot,90
+Mother's occupation__99,Mother's occupation,one_hot,99
+Mother's occupation__122,Mother's occupation,one_hot,122
+Mother's occupation__123,Mother's occupation,one_hot,123
+Mother's occupation__131,Mother's occupation,one_hot,131
+Mother's occupation__132,Mother's occupation,one_hot,132
+Mother's occupation__134,Mother's occupation,one_hot,134
+Mother's occupation__141,Mother's occupation,one_hot,141
+Mother's occupation__143,Mother's occupation,one_hot,143
+Mother's occupation__144,Mother's occupation,one_hot,144
+Mother's occupation__151,Mother's occupation,one_hot,151
+Mother's occupation__152,Mother's occupation,one_hot,152
+Mother's occupation__175,Mother's occupation,one_hot,175
+Mother's occupation__191,Mother's occupation,one_hot,191
+Mother's occupation__192,Mother's occupation,one_hot,192
+Mother's occupation__193,Mother's occupation,one_hot,193
+Mother's occupation__194,Mother's occupation,one_hot,194
+Father's occupation__0,Father's occupation,one_hot,0
+Father's occupation__1,Father's occupation,one_hot,1
+Father's occupation__2,Father's occupation,one_hot,2
+Father's occupation__3,Father's occupation,one_hot,3
+Father's occupation__4,Father's occupation,one_hot,4
+Father's occupation__5,Father's occupation,one_hot,5
+Father's occupation__6,Father's occupation,one_hot,6
+Father's occupation__7,Father's occupation,one_hot,7
+Father's occupation__8,Father's occupation,one_hot,8
+Father's occupation__9,Father's occupation,one_hot,9
+Father's occupation__10,Father's occupation,one_hot,10
+Father's occupation__90,Father's occupation,one_hot,90
+Father's occupation__99,Father's occupation,one_hot,99
+Father's occupation__101,Father's occupation,one_hot,101
+Father's occupation__102,Father's occupation,one_hot,102
+Father's occupation__103,Father's occupation,one_hot,103
+Father's occupation__112,Father's occupation,one_hot,112
+Father's occupation__114,Father's occupation,one_hot,114
+Father's occupation__121,Father's occupation,one_hot,121
+Father's occupation__122,Father's occupation,one_hot,122
+Father's occupation__123,Father's occupation,one_hot,123
+Father's occupation__131,Father's occupation,one_hot,131
+Father's occupation__132,Father's occupation,one_hot,132
+Father's occupation__134,Father's occupation,one_hot,134
+Father's occupation__135,Father's occupation,one_hot,135
+Father's occupation__144,Father's occupation,one_hot,144
+Father's occupation__151,Father's occupation,one_hot,151
+Father's occupation__152,Father's occupation,one_hot,152
+Father's occupation__154,Father's occupation,one_hot,154
+Father's occupation__161,Father's occupation,one_hot,161
+Father's occupation__163,Father's occupation,one_hot,163
+Father's occupation__171,Father's occupation,one_hot,171
+Father's occupation__172,Father's occupation,one_hot,172
+Father's occupation__174,Father's occupation,one_hot,174
+Father's occupation__175,Father's occupation,one_hot,175
+Father's occupation__181,Father's occupation,one_hot,181
+Father's occupation__182,Father's occupation,one_hot,182
+Father's occupation__183,Father's occupation,one_hot,183
+Father's occupation__192,Father's occupation,one_hot,192
+Father's occupation__193,Father's occupation,one_hot,193
+Father's occupation__194,Father's occupation,one_hot,194
