@@ -1,0 +1,15 @@
+model,C,gamma,class_weight,validation_macro_f1
+Logistic regression,1.0,,unweighted,0.6561704675824364
+Logistic regression,0.1,,unweighted,0.6550806861177596
+Logistic regression,10.0,,unweighted,0.6592689866289241
+Linear SVM,1.0,,unweighted,0.6626394929208161
+Linear SVM,0.1,,unweighted,0.6539011848871005
+Linear SVM,10.0,,unweighted,0.6656954554345945
+RBF SVM,1.0,scale,unweighted,0.6656991853031456
+RBF SVM,1.0,0.01,unweighted,0.6508231236422871
+RBF SVM,1.0,1.0,unweighted,0.6688151649320401
+RBF SVM,0.1,1.0,unweighted,0.5105291455276412
+RBF SVM,10.0,1.0,unweighted,0.6230408399837055
+Logistic regression,10.0,,balanced,0.6770124947371542
+Linear SVM,10.0,,balanced,0.6849080026309194
+RBF SVM,1.0,1.0,balanced,0.6437588449197547
