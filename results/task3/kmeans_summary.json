@@ -1,0 +1,19 @@
+{
+  "k": 3,
+  "features": [
+    "Curricular units 2nd sem (approved)",
+    "Tuition fees up to date",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (approved)",
+    "Age at enrollment",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 2nd sem (grade)",
+    "Admission grade",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 1st sem (grade)"
+  ],
+  "silhouette_train": 0.44488109567395195,
+  "silhouette_val": 0.45816449006591015,
+  "purete": 0.634376177911798
+}
