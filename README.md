@@ -1,92 +1,66 @@
-# Student Dropout Prediction
+# Prédiction du décrochage et de la réussite des étudiants
 
-Mini-projet M113, Master IDIA, FST Tanger. La tâche 1 prépare les données, implémente un arbre CART avec NumPy/Pandas et sélectionne les variables communes aux trois membres.
+Mini-projet M113 (Apprentissage automatique), Master IDIA, FST Tanger.
 
-## Contenu de la contribution de Charaf
+Le jeu de données vient de l'UCI : *Predict Students' Dropout and Academic Success*. Il décrit 4 424 étudiants. La cible `Target` vaut **Dropout** (abandon), **Enrolled** (toujours inscrit) ou **Graduate** (diplômé).
 
-| Élément | Utilisation |
+| Partie | Sujet | Membre | Notebook |
+| --- | --- | --- | --- |
+| 1 | Préparation des données, arbre CART en NumPy, sélection des variables | Charaf Eddine Ifrinchaou | `01_preparation_arbre.ipynb` |
+| 2 | Régression logistique et SVM (linéaire, RBF) | Chemseddine Ayoub | `classification.ipynb` |
+| 3 | K-means et profils d'étudiants | Adam Chaara | `03_kmeans.ipynb` |
+
+## Livrables
+
+| Fichier | Contenu |
 | --- | --- |
-| `01_preparation_arbre.ipynb` | Notebook commenté en français, avec résultats et figures intégrés. |
-| `data/raw/data.csv` | Fichier UCI original, séparateur point-virgule. |
-| `shared/` | Matrices sélectionnées, cibles, splits, mapping et paramètres communs. |
-| `results/task1/` | Comparaison des arbres, importances, statistiques, structure de l'arbre et figures. |
-| `rapport_partie1.md` | Contribution à intégrer au rapport commun. |
+| `Rapport_M113_MiniProjet.docx` / `.pdf` | Rapport final du groupe |
+| `M113_MiniProjet.ipynb` | Notebook final : les trois parties dans l'ordre |
+| `PRESENTATION.md` | Fiche pour préparer la soutenance |
+| `rapport_partie1.md`, `rapport_partie2.md`, `rapport_partie3.md` | Contributions détaillées de chaque membre |
 
-Les tâches 2 et 3 seront ajoutées par les deux autres membres. Le rapport et le notebook définitifs du groupe réuniront les trois contributions.
+## Organisation du dépôt
 
-## Exécution dans VS Code
+```
+data/raw/data.csv        fichier UCI original
+shared/                  données communes écrites par la partie 1 (contrat version 1)
+results/task1/           arbre : comparaison, importances, figures
+results/task2/           classification : validation, test, prédictions, figures
+results/task3/           K-means : choix de k, initialisations, profils, figures
+```
 
-Utiliser Python 3.11 ou ultérieur. L'environnement vérifié emploie Python 3.12, avec les versions des bibliothèques consignées dans `shared/metadata.json`.
+Toutes les parties utilisent les mêmes données :
+- même découpage stratifié 60/20/20 avec la graine 42, soit 2 653 étudiants en train, 883 en validation et 888 en test ;
+- mêmes 11 variables, choisies par l'arbre.
 
-1. Ouvrir le dossier racine `student-dropout-prediction` dans VS Code.
-2. Installer les extensions Python et Jupyter si nécessaire.
-3. Installer les dépendances dans l'environnement Python choisi.
+## Exécuter le projet
+
+1. Installer les bibliothèques : `python -m pip install -r requirements.txt`.
+2. Ouvrir le dossier `student-dropout-prediction` dans VS Code. Il faut ouvrir ce dossier-là, pas le dossier parent.
+3. Ouvrir `M113_MiniProjet.ipynb`, choisir l'environnement Python avec **Select Kernel**, puis lancer **Restart** et **Run All**. L'exécution prend environ 1 minute.
+
+Le projet peut aussi s'exécuter en ligne de commande, depuis le dossier du projet :
 
 ```bash
-python -m pip install -r requirements.txt
+python -m jupyter nbconvert --to notebook --execute --inplace M113_MiniProjet.ipynb
 ```
 
-4. Ouvrir `01_preparation_arbre.ipynb` et choisir cet environnement via **Select Kernel**.
-5. Exécuter **Restart Kernel**, puis **Run All**.
+Les notebooks individuels s'exécutent dans l'ordre `01` → `classification` → `03`. Toutes les graines sont fixées, donc les fichiers de `results/` sont reproduits à l'identique. Seules changent les durées mesurées.
 
-Le fichier brut inclus permet de travailler hors ligne. Si ce fichier manque, la première partie tente de le télécharger depuis UCI. Le notebook régénère `shared/`, `results/task1/` et le texte du rapport. La version du contrat reste stable lorsque les données et la sélection sont identiques.
+## Résultats principaux
 
-## Protocole appliqué
+| Méthode | Résultat |
+| --- | --- |
+| Arbre CART (NumPy) | Le pré-élagage (profondeur 8, au moins 5 étudiants par feuille) fait passer le F1 macro de validation de 0,593 à 0,674. 11 variables gardent 90 % de l'importance. La plus importante est le nombre d'unités validées au 2ᵉ semestre. |
+| Régression logistique pondérée | Meilleur F1 macro sur le test : 0,707 (exactitude 0,747). |
+| SVM linéaire pondéré / SVM RBF | F1 macro sur le test : 0,696 / 0,646. Le SVM linéaire a le meilleur rappel sur `Enrolled` (0,67). |
+| K-means (k = 3) | Silhouette de 0,445. Un groupe à risque compte 83 % de décrocheurs, soit 2,6 fois le taux global. Il se retrouve sur la validation et le test. |
 
-- Classes communes dans l'ordre `Dropout`, `Enrolled`, `Graduate`.
-- Découpage stratifié déterministe, graine 42, avec 2 653 lignes de train, 883 de validation et 888 de test.
-- Schéma one-hot appris sur train. Variables binaires et quantitatives conservées numériquement.
-- Arbre CART, Gini, implémentation NumPy, métriques calculées avec NumPy.
-- Comparaison d'un arbre de base et de neuf configurations de pré-élagage.
-- Choix du meilleur F1 macro de validation, départagé par le nombre de nœuds.
-- Sélection à 90 % d'importance cumulée. Les 11 colonnes retenues sont exportées avant standardisation.
-- Test réservé aux évaluations finales des étapes suivantes.
+**Limite principale.** Les variables du 2ᵉ semestre sont utilisées, donc l'analyse est rétrospective. La classe `Enrolled` reste la plus difficile à reconnaître pour les trois méthodes.
 
-## Résultats de la tâche 1
+## Sources
 
-| Modèle | F1 macro train | F1 macro validation | Nœuds |
-| --- | --- | --- | --- |
-| Arbre sans limite de profondeur, feuille minimale 1 | 1.0000 | 0.5932 | 985 |
-| Arbre retenu, profondeur maximale 8, feuille minimale 5 | 0.7664 | 0.6738 | 199 |
+- Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021). *Predict Students' Dropout and Academic Success*. UCI Machine Learning Repository. https://doi.org/10.24432/C5MC89 (licence CC BY 4.0).
+- Realinho, V., Machado, J., Baptista, L., & Martins, M. V. (2022). *Predicting Student Dropout and Academic Success*. Data, 7(11), 146. https://doi.org/10.3390/data7110146
 
-Le premier partage porte sur les unités validées au deuxième semestre. Le tableau complet et les temps mesurés se trouvent dans `results/task1/tree_comparison.csv`.
-
-![Importance des caractéristiques](results/task1/figures/importances_variables.png)
-
-Les résultats incluent des informations du deuxième semestre. Ils décrivent une classification rétrospective. La disponibilité exacte des variables au moment d'un abandon individuel reste une limite. Les importances Gini sont propres à l'arbre et sensibles aux corrélations. La sélection supervisée préalable doit aussi être signalée dans l'interprétation de K-means.
-
-## Transmettre aux collègues
-
-Partager le dossier `shared/` complet, avec une seule version commune. Dans leurs notebooks, charger les données en conservant `row_id` comme index.
-
-```python
-from pathlib import Path
-import json
-import pandas as pd
-
-shared = Path("shared")
-features = json.loads(
-    (shared / "selected_features.json").read_text(encoding="utf-8")
-)["features"]
-labels = pd.read_csv(shared / "labels.csv", index_col="row_id")
-X_train = pd.read_csv(shared / "X_train.csv", index_col="row_id").loc[:, features]
-y_train = labels.loc[X_train.index, "Target"]
-```
-
-Appliquer le même chargement à `val` et `test`. Ajuster la standardisation sur train. Les collègues doivent réutiliser les splits et les colonnes fournis. `row_id`, `split` et `Target` restent exclus des entrées des modèles.
-
-## Vérification
-
-Les cellules ont été exécutées dans l'ordre dans un processus Python neuf et leurs sorties ont été enregistrées. Le transport réseau d'un noyau Jupyter étant indisponible dans l'environnement de préparation, l'exécution a utilisé IPython dans le même processus. L'exécution interactive dans VS Code reste à vérifier sur l'ordinateur de l'étudiant.
-
-Les contrôles du notebook couvrent les cas purs/constantes, une séparation connue, le multiclasse, la taille minimale des feuilles, le F1, les identifiants, les splits et les exports CSV. Une vérification supplémentaire a comparé les coupures à une recherche exhaustive sur des petits jeux synthétiques. Deux exécutions complètes ont produit les mêmes données communes.
-
-## Sources et attribution des données
-
-Le fichier brut et ses dérivés sont distribués sous la licence CC BY 4.0 des données UCI. Les transformations réalisées sont décrites dans le notebook et `shared/preprocessing.json`.
-
-- Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021). *Predict Students' Dropout and Academic Success*. UCI Machine Learning Repository. [Données et dictionnaire](https://doi.org/10.24432/C5MC89).
-- Realinho, V., Machado, J., Baptista, L., & Martins, M. V. (2022). *Predicting Student Dropout and Academic Success*. Data, 7(11), 146. [Article](https://doi.org/10.3390/data7110146).
-- [Licence CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
-L'article décrit 35 attributs. Le fichier UCI utilisé contient 36 prédicteurs et une cible. Son empreinte SHA-256 est conservée dans `shared/metadata.json`.
+La bibliographie complète se trouve dans le rapport.

@@ -1,5 +1,5 @@
 {
-  "k": 3,
+  "contract_version": 1,
   "features": [
     "Curricular units 2nd sem (approved)",
     "Tuition fees up to date",
@@ -13,7 +13,59 @@
     "Curricular units 2nd sem (enrolled)",
     "Curricular units 1st sem (grade)"
   ],
-  "silhouette_train": 0.44488109567395195,
-  "silhouette_val": 0.45816449006591015,
-  "purete": 0.634376177911798
+  "k": 3,
+  "k_range": [
+    2,
+    10
+  ],
+  "second_best_k": 2,
+  "silhouette_gap": 0.014431010132673727,
+  "init": "random",
+  "n_init": 20,
+  "random_state": 42,
+  "cluster_order_feature": "Curricular units 2nd sem (approved)",
+  "silhouette": {
+    "train": 0.44488109567395195,
+    "val": 0.45816449006591015,
+    "test": 0.4446528797505707
+  },
+  "cluster_sizes": {
+    "train": [
+      487,
+      2004,
+      162
+    ],
+    "val": [
+      162,
+      673,
+      48
+    ],
+    "test": [
+      187,
+      664,
+      37
+    ]
+  },
+  "agreement_with_target": {
+    "train": {
+      "purete": 0.6344,
+      "reference_classe_majoritaire": 0.4994,
+      "ARI": 0.1392,
+      "NMI": 0.1525
+    },
+    "val": {
+      "purete": 0.6342,
+      "reference_classe_majoritaire": 0.4994,
+      "ARI": 0.1355,
+      "NMI": 0.1518
+    },
+    "test": {
+      "purete": 0.6543,
+      "reference_classe_majoritaire": 0.4989,
+      "ARI": 0.1741,
+      "NMI": 0.1885
+    }
+  },
+  "numpy_kmeans_inertia": 15537.827559268826,
+  "sklearn_inertia": 15537.827559268826
 }
